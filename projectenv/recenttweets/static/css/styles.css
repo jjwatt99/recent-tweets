@@ -1,0 +1,164 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+input {
+	font-size: 18px;
+	border: 1px solid #000000;
+}
+
+input:focus {
+	outline: none;
+}
+
+button {
+	color: #000000;
+	font-size: 18px;
+	background-color: #ffffff;
+	border-radius: 10px;
+  border: 1px solid #000000;
+}
+
+button:focus {
+	outline: none;
+}
+
+li {
+	list-style: none;
+}
+
+ul {
+	padding: 0;
+}
+
+.nav-container {
+	background-color: #d2d2d2;
+}
+
+.nav-title {
+	font-size: 1.5em;
+	text-align: center;
+	padding-top: 10px;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.nav-bottom {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+
+.symbol {
+	height: 40px;
+	cursor: pointer;
+}
+
+.search-bar {
+	width: 400px;
+	height: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.search-button {
+	width: 150px;
+	height: 30px;
+	cursor: pointer;
+	margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 1px 1px;
+  position: relative;
+	display: flex;
+	flex-direction: row;
+}
+
+.mag-glass {
+	height: 20px;
+	padding: 3px 3px;
+}
+
+.search-text {
+	width: 80px;
+  line-height: 26px;
+  margin-left: 8px;
+}
+
+.tweet-container {
+	position: relative;
+}
+
+.tweet-list {
+	width: 1000px;
+	margin: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.list-item {
+	position: relative;
+  border: 1px solid #000000;
+}
+
+.list-container {
+	width: 980px;
+	margin: 10px;
+	display: flex;
+  align-items: start;
+}
+
+.list-image {
+	display: inline-block;
+}
+
+.tweet-text {
+	display: inline-block;
+	width: 100%;
+	margin-left: 10px;
+}
+
+.tweet-detail {
+	position: relative;
+	margin-bottom: 12px;
+}
+
+.name {
+	display: inline-block;
+	margin-right: 50px;
+}
+
+.screen {
+	display: inline-block;
+}
+
+.date {
+	display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+.bottom-container {
+	background-color: #d2d2d2;
+	height: 52px;
+}
+
+.bottom-text-wrapper {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.bottom-text {
+	margin: 0;
+	margin-left: auto;
+	margin-right: 0;
+	font-size: 1.5em;
+	line-height: 52px;
+}

@@ -1,0 +1,40 @@
+<div class="home-container">
+  <div class="nav-container">
+	  <p class="nav-title">Tapingo Twitter Assignment</p>
+	  <div class="nav-bottom">
+		  <div><img src="static/assets/left_arrow.png" class="symbol" ng-click="pagination.prevPage()" id="prev"></div>
+		  <div><img src="static/assets/right_arrow.png" class="symbol" ng-click="pagination.nextPage()" id="next"></div>
+		  <div><img src="static/assets/x_letter.png" class="symbol" ng-click="clickX()" id="x"></div>
+		  <div><img src="static/assets/home_icon.png" class="symbol" ng-click="clickHome()" id="home"></div>
+		  <input type="text" class="search-bar" ng-model="query">
+		  <button class="search-button" ng-click="clickSearch()">
+		    <img src="static/assets/mag_glass.png" class="mag-glass">
+		    <div class="search-text">Search</div>
+		  </button>
+	  </div>
+	</div>
+	<div class="tweet-container">
+		<div class="tweet-list">
+			<ul>
+				<li class="list-item" ng-repeat="item in result | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage">
+				  <div class="list-container">
+						<img ng-src="{{ item[4] }}" class="list-image">
+						<div class="tweet-text">
+							<div class="tweet-detail">
+								<div class="name">{{ item[2] }}</div>
+								<div class="screen">{{ item[3] }}</div>
+								<div class="date">{{ item[1] }}</div>
+							</div>
+							<div>{{ item[0] }}</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+  <div class="bottom-container">
+		<div class="bottom-text-wrapper">
+	  	<p class="bottom-text">{{ pagination.page + 1 }} / {{ pagination.numPages }}</p>
+	  </div>
+	</div>
+</div>

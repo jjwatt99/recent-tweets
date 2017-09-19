@@ -1,0 +1,17 @@
+<html>
+  <head>
+    {% load static %}
+    {% csrf_token %}
+    <title>Recent Tweets</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="{% static 'js/external/simplePagination.js' %}"></script>
+    <script src="{% static 'js/external/angular-route.min.js' %}"></script>
+    <script src="{% static 'js/external/angular-cookies.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  </head>
+  <body ng-app="main">
+    <div ng-view autoscroll="true"></div>
+    <script src="{% static 'js/index.js' %}"></script>
+    <script src="{% static 'js/components/home.js' %}"></script>
+  </body>
+</html>
